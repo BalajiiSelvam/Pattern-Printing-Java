@@ -1,13 +1,67 @@
-**1. SQUARE-PATTERN**                                                      
+**1. SQUARE-FILL**                                                      
 
+--> APPROACH = 1 <--
 import java.util.*;
-class SquarePattern {                                                        **If rows = 4**
-    public static void main(String[] args) {                                 * * * *
-        Scanner scan = new Scanner(System.in);                               * * * *            
-        int rows = scan.nextInt();                                           * * * *
-        for(int i=1;i<=rows;i++){                                            * * * *
+class SquarePattern {                                                        __If rows = 4__
+    public static void main(String[] args) {                                    * * * *
+        Scanner scan = new Scanner(System.in);                                  * * * *            
+        int rows = scan.nextInt();                                              * * * *
+        for(int i=1;i<=rows;i++){                                               * * * *
             for(int j=1;j<=rows;j++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+--> APPROACH = 2 <--
+import java.util.*;
+public class SquarePattern {
+    public static void main(String[] args) {
+        String str = "* ";
+        Scanner scan = new Scanner(System.in);
+        int rows = scan.nextInt();
+        for(int i=1;i<=rows;i++)
+        {
+            System.out.println(str.repeat(rows));
+        }
+    }
+}
+
+
+**2. BORDER-SQUARE**
+
+import java.util.*;
+class SquarePattern {                                                        __If rows = 4__
+    public static void main(String[] args) {                                    * * * *
+        Scanner scan = new Scanner(System.in);                                  *     *            
+        int rows = scan.nextInt();                                              *     *
+        for(int i=1;i<=rows;i++){                                               * * * *
+            for(int j=1;j<=rows;j++){
+                if(i==1||j==1||i==rows||j==rows)
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**3. SQUARE-WITH-CROSS**
+
+import java.util.*;
+class SquarePattern {                                                        __If rows = 5__
+    public static void main(String[] args) {                                    * * * * * 
+        Scanner scan = new Scanner(System.in);                                  * *   * *            
+        int rows = scan.nextInt();                                              *   *   *
+        for(int i=1;i<=rows;i++){                                               * *   * *
+            for(int j=1;j<=rows;j++){                                           * * * * *
+                 if(i==1||j==1||i==rows||j==rows||i==j||i==rows-j+1)
+                System.out.print("* ");
+                else
+                System.out.print("  ");
             }
             System.out.println();
         }
