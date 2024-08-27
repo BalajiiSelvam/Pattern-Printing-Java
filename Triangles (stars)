@@ -1,0 +1,188 @@
+**1. RIGHT-INVERSE-Triangle**
+
+--> APPROACH - 1 <--
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * * * * *
+        int rows = scan.nextInt();                                     * * * *
+        for(int i=1;i<=rows;i++){                                        * * *                     
+            for(int j=1;j<=rows;j++){                                      * * 
+                if(i==1||j==rows||j>=i)                                      *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**2. RIGHT-INVERSE-Triangle-OUTLINE**
+
+import java.util.*;
+class RightInverseOutline {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * * * * *
+        int rows = scan.nextInt();                                     *     *
+        for(int i=1;i<=rows;i++){                                        *   *                     
+            for(int j=1;j<=rows;j++){                                      * * 
+                if(i==1||j==rows||i==j)                                      *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**3. LEFT-INVERSE-Triangle**
+
+--> APPROACH - 1 <--
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * * * * *
+        int rows = scan.nextInt();                                   * * * *
+        for(int i=1;i<=rows;i++){                                    * * *                     
+            for(int j=rows;j>=1;j--){                                * * 
+                if(i==1||j==rows||j>=i)                              *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+--> APPROACH - 2 <--
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * * * * *
+        int rows = scan.nextInt();                                   * * * *
+        for (int i=rows;i>=1;i--){                                   * * *                     
+            for (int j=1;j<=i;j++){                                  * * 
+                System.out.print("* ");                              *
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+**4. LEFT-INVERSE-Triangle-OUTLINE**
+
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * * * * *
+        int rows = scan.nextInt();                                   *     *
+        for(int i=1;i<=rows;i++){                                    *   *                     
+            for(int j=rows;j>=1;j--){                                * * 
+                if(i==1||j==rows||j==i)                              *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**5. LEFT-Triangle**
+
+--> APPROACH - 1 <--
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * 
+        int rows = scan.nextInt();                                   * * 
+       for(int i=1;i<=rows;i++){                                     * * *
+            for(int j=1;j<=rows;j++){                                * * * *
+                if(i==rows||j==i||j<=i)                              * * * * *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+--> APPROACH - 2 <--
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * 
+        int rows = scan.nextInt();                                   * * 
+       for (int i=1;i<=rows;i++){                                    * * *
+            for (int j=1;j<=i;j++){                                  * * * *                                                        
+                System.out.print("* ");                              * * * * *
+            }
+            System.out.println();
+        }
+    }
+}
+
+**6. LEFT-Triangle-OUTLINE**
+
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                       * 
+        int rows = scan.nextInt();                                   * * 
+       for(int i=1;i<=rows;i++){                                     *   *
+            for(int j=1;j<=rows;j++){                                *     *
+                if(i==rows||j==1||j==i)                              * * * * *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**7. RIGHT-Triangle**
+
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                               * 
+        int rows = scan.nextInt();                                         * * 
+       for(int i=1;i<=rows;i++){                                         * * *
+            for(int j=rows;j>=1;j--){                                  * * * *
+                if(j<=i)                                             * * * * *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+**8. RIGHT-Triangle-OUTLINE**
+
+import java.util.*;
+class RightInverse {
+    public static void main(String[] args) {                      __If rows = 5__
+        Scanner scan = new Scanner(System.in);                               * 
+        int rows = scan.nextInt();                                         * * 
+       for(int i=1;i<=rows;i++){                                         *   *
+            for(int j=rows;j>=1;j--){                                  *     *
+                if(i==rows||j==1||j==i)                              * * * * *
+                System.out.print("* ");
+                else
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
