@@ -1,1 +1,1 @@
-# Square-pattern-stars
+# Patterns (Stars and Numbers)
