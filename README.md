@@ -1,1 +1,1 @@
-# Star-Patterns-logic-JAVA-
+# Star-Patterns-logic-JAVA
